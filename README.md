@@ -30,10 +30,11 @@ Para el desarrollo se asumio que:
 
 En este caso se desarrollo lo que se entendio que se requeria de la aplicacion sin trabajar sobre los detalles de esta para evitar tiempo extra desarrollo. Ejemplo de estos detalles:
 
-- Un front mas producido y responsivo
-- Mas restriccion al momento de crear una cuenta (limite de caracteres, solo caracteres y numeros, etc)
-- Una view intermedia entre el login y el livestreaming
-- Mayor detalle de erorres para el usuario
+- Un front mas producido y responsivo.
+- Mas restriccion al momento de crear una cuenta (limite de caracteres, solo caracteres y numeros, etc).
+- Una view intermedia entre el login y el livestreaming.
+- Mayor detalle de erorres para el usuario.
+- Utilizar imagnes, un header y un footer.
 
 La mayor parte del tiempo de desarrollo se dedico al estudio de crear aplicaciones web tanto en javascript como en Golang. Asi como montar la aplicacion utilizando docker
 
