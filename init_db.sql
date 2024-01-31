@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS sapoing;
+USE sapoing;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT,
+  username VARCHAR(100),
+  pwrd VARCHAR(100),
+  PRIMARY KEY (id)
+);

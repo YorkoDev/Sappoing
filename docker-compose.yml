@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  #front:
+  #  build: frontend
+  #  ports:
+  #  - "3000:3000"
+  app:
+    build: .
+    ports:
+    - "8080:8080"
+    networks:
+      - mynetwork
+    depends_on:
+      - db
+  db:
+    image: 'mysql:latest'
+    environment:
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'pass'
+      MYSQL_ROOT_PASSWORD: 'pato' 
+    volumes:
+      - db-data:/foo
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    networks:
+      - mynetwork
+volumes:
+  db-data:
+networks:
+  mynetwork:
