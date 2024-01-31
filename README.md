@@ -35,6 +35,7 @@ En este caso se desarrollo lo que se entendio que se requeria de la aplicacion s
 - Una view intermedia entre el login y el livestreaming.
 - Mayor detalle de erorres para el usuario.
 - Utilizar imagnes, un header y un footer.
+- Temas de seguridad de datos.
 
 La mayor parte del tiempo de desarrollo se dedico al estudio de crear aplicaciones web tanto en javascript como en Golang. Asi como montar la aplicacion utilizando docker
 

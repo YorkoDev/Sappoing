@@ -19,22 +19,9 @@
         var hls = new Hls({
 
             liveDurationInfinity: true,
-            debug: true,
+            //debug: true,
             autoStartLoad: true,
-            startPosition: 0,
-            startLevel: 0,
             maxBufferLength: 60,
-            capLevelToPlayerSize: true,
-            maxMaxBufferLength: 600,
-            backBufferLength: Infinity,
-            maxBufferSize: 60 * 1000 * 1000,
-            maxBufferHole: 0.5,
-            maxLoadingDelay: 5,
-            defaultAudioCodec: 'mp4a.40.2',
-            initialLiveManifestSize: 3,
-            liveSyncDurationCount: 9,
-            enableWorker: true,
-            lowLatencyMode: false
         });
         hls.loadSource('http://localhost:8080/vid_src/zapp.m3u8');
         hls.attachMedia(video);

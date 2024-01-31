@@ -8,7 +8,6 @@ RUN go get -u github.com/go-sql-driver/mysql
 
 RUN go get -u golang.org/x/crypto/bcrypt
 
-#RUN go get -u github.com/gorilla/context
 
 RUN go get -u github.com/gorilla/sessions
 

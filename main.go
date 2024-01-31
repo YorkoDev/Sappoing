@@ -21,8 +21,6 @@ var store = sessions.NewCookieStore([]byte("temporary_secret"))
 
 var db *sql.DB
 
-//var tmpl *template.Template
-
 func VideoServe(w http.ResponseWriter, r *http.Request) {
 	session, _ := store.Get(r, "session")
 	_, ok := session.Values["username"]
@@ -53,7 +51,6 @@ func connectDb() {
 
 func main() {
 	go connectDb()
-	//http.Handle("/vid_src/{$}", http.FileServer(http.Dir("./src")))
 	http.Handle("/vid_src/", http.StripPrefix("/vid_src/", http.FileServer(http.Dir("./src"))))
 	http.HandleFunc("/login", LoginPage)
 	http.HandleFunc("/loginauth", LoginPageHandler)
