@@ -15,11 +15,11 @@ services:
       MYSQL_PASSWORD: 'pass'
       MYSQL_ROOT_PASSWORD: 'pato' 
     volumes:
-      - db-data:/foo
+      - jorgeltest-data:/foo
       - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
     networks:
       - mynetwork
 volumes:
-  db-data:
+  jorgeltest-data:
 networks:
   mynetwork:
